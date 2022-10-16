@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Unitis </title>
+    <style>
+        thead th {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        table{
+            table-layout: auto;
+            width: 70%;
+        }
+
+        .abs-div{
+            background: orange;
+            width: 200px; 
+            height: 100px;
+            /* في absolute يتم استخدام وحدة البيكسل في تحديد حجم العنصر*/
+        }
+        .rel-div {
+            background: red;
+            /* في relative يتم استخدام النسبة المئوية في تحديد حجم العنصر */
+            width: 70%;
+            height: 100px;
+        }
+        .v{
+            background: bisque;
+            width: 50%;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="abs-div"></div>
+    <div class="rel-div"></div>
+   
+    <div style="width: 50%;background: green;height: 10%;">
+         <div class="v"></div>
+    </div>
+    <div>
+        <h1> وحدة القياس   القيمة المطلقة absloute  </h1>
+        <p> العنصر ما بيتغير حجمة في حال اتغير حجم الشاشة اي ان خحم العنصر راح يكون ثابت</p>
+        <h1> وحدة القياس  relative </h1>
+        <p> العنصر بيتغير حجمة في حال اتغير حجم الشاشة </p>
+        <h1> اختيار حجم العنصر بناء عن حجم العنصر  </h1>
+        <p> في المثال الاخير قمنل بالعملية هذه  </p>
+        <table>
+            <tr>
+                <thead> 
+                    <th scope="col"> وحدة القياس </th>
+                    <th scope="col"> الاستخدام </th>
+                </thead>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>وحدة القياس   القيمة المطلقة absloute</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
